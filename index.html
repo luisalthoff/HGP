@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hgp.css">
+    <script src="hgp.js"></script>
+    <title>HPG</title>
+</head>
+
+<body onload = "init()"> 
+    
+    <div style='margin-bottom:25px; text-align: center;'>
+        <!-- img src='HP-Final.png'></image -->
+    </div>
+    
+    <div style='margin:2%'>
+        <select id="Alu" style="float:left">
+            <option disabled selected value>Alunos</option>
+            <option value="">Safra</option>
+            <option value="Itau">Itau</option>
+            <option value="BB">BB</option>
+            <option value="N26">N26</option>
+        </select>
+        <select id="Mes" onchange="geraCalendario(document.getElementById('Ano').value, this.value)">
+            <option value="1">Jan</option>
+            <option value="2">Fev</option>
+            <option value="3">Mar</option>
+            <option value="4">Abr</option>
+            <option value="5">Mai</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Ago</option>
+            <option value="9">Set</option>
+            <option value="10">Out</option>
+            <option value="11">Nov</option>
+            <option value="12">Dez</option>
+        </select>
+        <br>
+        <h id='Tot'></h>
+        <select id="Ano" onchange = "geraCalendario(this.value, document.getElementById('Mes').value)">
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+        </select>
+
+        <table id="tblCal">
+            <tr>
+                <th>SEG</th>
+                <th>TER</th>
+                <th>QUA</th>
+                <th>QUI</th>
+                <th>SEX</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
