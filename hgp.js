@@ -6,7 +6,7 @@ function init()
 {
     
     let sql = 'SELECT * FROM alunos';
-    db.get(sql); // [], (err, row) => {
+    //db.get(sql); // [], (err, row) => {
         document.getElementById("Tot").innerText=56; 
     //});
     const mesAtual = new Date().getMonth();
