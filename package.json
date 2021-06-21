@@ -1,0 +1,27 @@
+{
+  "name": "hgp",
+  "version": "1.0.0",
+  "description": "hgp",
+  "main": "hgp.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisalthoff/HGP.git"
+  },
+  "keywords": [
+    "hgp"
+  ],
+  "author": "laa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisalthoff/HGP/issues"
+  },
+  "homepage": "https://github.com/luisalthoff/HGP#readme"
+}

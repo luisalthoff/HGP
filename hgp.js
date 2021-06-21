@@ -1,13 +1,12 @@
 
-//const sqlite3 = require('sqlite3').verbose();
-//const db = new sqlite3.Database('hgp.db');
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('./hgp.db');
  
 function init()
 {
-    var db = openDatabase("hgp", "1.0", "hgp", 20000);  
-    alert(db.length());
     let sql = 'SELECT * FROM alunos';
-    //db.get(sql); // [], (err, row) => {
+    console.log (sql);
+    db.get(sql); // [], (err, row) => {
         document.getElementById("Tot").innerText=56; 
     //});
     const mesAtual = new Date().getMonth();
