@@ -5,7 +5,7 @@
 function init()
 {
     var db = openDatabase("hgp", "1.0", "hgp", 20000);  
-    alert(db.length);
+    alert(db.length());
     let sql = 'SELECT * FROM alunos';
     //db.get(sql); // [], (err, row) => {
         document.getElementById("Tot").innerText=56; 
